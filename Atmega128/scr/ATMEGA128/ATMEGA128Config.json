@@ -2,7 +2,7 @@
   "projectName": "ATMEGA128",
   "projectPath": "D:\\HTI\\NTI\\EmbeddedTasks\\Atmega128\\scr\\ATMEGA128",
   "outputPath": "D:\\HTI\\NTI\\EmbeddedTasks\\Atmega128\\scr\\ATMEGA128",
-  "outputName": "ADC",
+  "outputName": "ultrs",
   "target": "AVR",
   "mcu": "atmega128",
   "language": "C",
@@ -25,6 +25,6 @@
   "port": "",
   "baudRate": "115200",
   "timeout": "5000",
-  "firmwareFile": "D:\\HTI\\NTI\\EmbeddedTasks\\Atmega128\\scr\\ATMEGA128/ADC.hex",
+  "firmwareFile": "D:\\HTI\\NTI\\EmbeddedTasks\\Atmega128\\scr\\ATMEGA128/ultrs.hex",
   "programmer": "usbasp"
 }

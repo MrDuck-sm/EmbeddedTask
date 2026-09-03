@@ -74,14 +74,15 @@ void LCD_Go_To_XY(uint8_t x,uint8_t y){
     LCD_Instruction((0x80|DataAdress),LCD_8bitMode);
 }
 
-void LCD_Number(uint8_t num ,uint8_t ModleType){
-    uint8_t x=0,
+void LCD_Number(int32_t num ,uint8_t ModleType){
+    int32_t x=0,
     reverse=0;
     if(num==0){
         LCD_WriteData('0',LCD_8bitMode);
     }
-    else if(num>=255){
-        LCD_WriteString(" cant be 225",LCD_8bitMode);
+    else if(num<0){
+        LCD_WriteData('-',LCD_8bitMode);
+        num=-num;
     }
     while(num!=0){
         reverse=reverse*10+(num%10);
